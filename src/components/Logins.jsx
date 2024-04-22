@@ -1,3 +1,4 @@
+
 import Login from "../pages/Login"
 
 
@@ -50,6 +51,11 @@ function Logins(){
     </div>
 
         </div>
+function Logins (){
+    return(
+        <>
+        </>
+
     )
 }
 export default Logins

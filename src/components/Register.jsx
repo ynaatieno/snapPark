@@ -2,6 +2,7 @@
 
 
 
+
 function Register(){
     return(
         
@@ -63,6 +64,11 @@ function Register(){
     
   </div>
         
+
+function Register (){
+    return(
+        <>
+        </>
     )
 }
 export default Register
