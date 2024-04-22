@@ -5,13 +5,13 @@ import Signup from "../pages/Signup"
 function Router (){
     return(
       <BrowserRouter>
-<Route>
+<Routes>
 <Route path="/login"element={<Layout><Login/></Layout>}/>
 <Route path="/signup"element={<Layout><Signup/></Layout>}/>
 <Route path="/payment"element={<Layout><Signup/></Layout>}/>
 
 
-</Route>
+</Routes>
 
 
 
