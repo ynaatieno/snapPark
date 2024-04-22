@@ -8,6 +8,11 @@ function App() {
       <Router/>
     </div>
     </>
+
+    <div>
+      <Router/>
+    </div>
+
   )
 }
 
