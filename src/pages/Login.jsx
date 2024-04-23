@@ -1,10 +1,10 @@
-import Logins from "../components/Logins"
+import Logins from "../Components/Logins";
 
-function Login(){
-    return(
-        <div>
-            <Logins/>
-        </div>
-    )
+function Login() {
+  return (
+    <div>
+      <Logins />
+    </div>
+  );
 }
-export default Login
+export default Login;

@@ -1,10 +1,10 @@
-import Payment from "../components/Payment"
+import Payment from "../Components/Payment";
 
-function Payments(){
-    return(
-        <>
-        <Payment/>
-        </>
-    )
+function Payments() {
+  return (
+    <>
+      <Payment />
+    </>
+  );
 }
-export default Payments
+export default Payments;

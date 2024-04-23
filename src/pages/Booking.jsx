@@ -1,11 +1,10 @@
-import Bookings from "../components/Bookings"
+import Bookings from "../Components/Bookings";
 
-
-function Booking(){
-    return(
-        <>
-        <Bookings/>
-        </>
-    )
+function Booking() {
+  return (
+    <>
+      <Bookings />
+    </>
+  );
 }
-export default Booking
+export default Booking;

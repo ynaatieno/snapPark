@@ -1,12 +1,10 @@
-import Register from "../components/Register" 
-
+import Register from "../Components/Register";
 
 function Signup(){
     return(
-        <div>
-            <Register/>
-        </div>
+<>
+<Register/>
+</>
     )
 }
-
 export default Signup
