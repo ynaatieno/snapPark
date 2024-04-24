@@ -1,3 +1,4 @@
+
 import Logins from "../Components/Logins";
 
 function Login() {
@@ -7,4 +8,6 @@ function Login() {
     </div>
   );
 }
-export default Login;
+export default Login
+
+

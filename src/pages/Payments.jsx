@@ -1,3 +1,4 @@
+
 import Payment from "../Components/Payment";
 
 function Payments() {
@@ -7,4 +8,5 @@ function Payments() {
     </>
   );
 }
-export default Payments;
+export default Payments
+
