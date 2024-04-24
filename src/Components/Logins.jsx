@@ -87,11 +87,9 @@ email:"",
         <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-[1em] px-[9em] rounded-full my-5" onClick={handleLogin}>
           Sign in
         </button>
-        <h2 className="text-center">OR</h2>
+       
 
-        <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-[1em] px-[6em] rounded-full">
-          Sign in with Google
-        </button>
+        
         <Link to="/Signup"><h2 className="my-4 ">Don't have an account?<span className="text-[#023047] cursor-pointer">Sign up</span></h2></Link>
         <h2 className="text-center my-4 cursor-pointer">Forgot password?</h2>
         <h2 className="text-center my-4 ">

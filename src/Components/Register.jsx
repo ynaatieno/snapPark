@@ -150,10 +150,7 @@ function Register() {
         >
           Create an account
         </button>
-        <h2 className="text-center">OR</h2>
-        <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-[1em] px-7em] rounded-full">
-          continue with Google
-        </button>
+        
         <h2 className="my-4 ">
           already have an account?
          <Link to="/Login"><span className="text-[#023047] cursor-pointer">Log in</span></Link>
