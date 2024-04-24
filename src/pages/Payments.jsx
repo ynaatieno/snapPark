@@ -1,3 +1,15 @@
+
+
+
+import Payment from "../Components/Payment";
+
+function Payments() {
+  return (
+    <>
+      <Payment />
+    </>
+  );
+
 import Payment from "../components/Payment"
 
 
@@ -15,5 +27,7 @@ function Payments (){
         </div>
 
     )
+
 }
 export default Payments
+

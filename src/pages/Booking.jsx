@@ -1,5 +1,14 @@
-import Bookings from "../components/Bookings"
 
+
+
+import Bookings from "../Components/Bookings";
+
+function Booking() {
+  return (
+    <>
+      <Bookings />
+    </>
+  );
 
 
 function Booking(){
@@ -15,5 +24,7 @@ function Booking (){
         </div>
 
     )
+
 }
-export default Booking
+export default Booking;
+

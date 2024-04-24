@@ -1,4 +1,10 @@
 
+function Logins (){
+    return(
+        <>
+        </>
+
+
 
 
 import Login from "../pages/Login"
@@ -14,6 +20,7 @@ function Logins (){
     return(
         <>
         </>
+
 
     )
 }

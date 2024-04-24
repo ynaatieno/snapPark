@@ -1,8 +1,27 @@
-import Router from "./components/Router"
+
+
+import Router from "./Components/Router";
+
+
+
+
 
 function App() {
-
   return (
+
+
+
+    
+      <div>
+        <Router />
+      </div>
+    
+  
+  );
+  
+
+   
+
     <>
     <div>
       <Router/>
@@ -14,6 +33,7 @@ function App() {
     </div>
 
   )
+
 }
 
-export default App
+export default App;

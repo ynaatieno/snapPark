@@ -1,13 +1,6 @@
 
-function Nav ()
-
-
 
 function Nav(){
-
-function Nav (){
-
-
     return(
         <>
         </>

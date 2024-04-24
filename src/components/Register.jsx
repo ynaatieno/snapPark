@@ -1,4 +1,8 @@
 
+function Register (){
+    return(
+
+
 
 
 
@@ -11,6 +15,7 @@ function Register(){
 
 function Register (){
     return(
+
         <>
         </>
     )

@@ -4,8 +4,9 @@ import Signup from "../pages/Signup";
 import Payments from "../pages/Payments";
 import Booking from "../pages/Booking";
 import Home from "../pages/Home";
+import Layout from "../pages/Layout";
 
-function Router (){
+function Router(){
     return(
       <BrowserRouter>
 <Routes>

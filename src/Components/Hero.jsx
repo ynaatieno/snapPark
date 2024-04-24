@@ -1,14 +1,6 @@
 
-function Hero (){
-
-
-
 
 function Hero(){
-
-function Hero (){
-
-
     return(
         <>
         </>
