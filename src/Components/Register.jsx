@@ -5,6 +5,8 @@ import { getAuth, createUserWithEmailAndPassword, validatePassword } from "fireb
 import { auth, db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom"
+
 
 function Register() {
   const [showPassword, setShowPassword] = useState(true);
@@ -46,10 +48,7 @@ function Register() {
     } else if (confirmPassword.passwordValue !== formData.password) {
       setErrorMessage("Passwords do not match");
      
-    }  else if(validatePassword(passwordInput.value)){
-isvalid=false
-setErrorMessage("please set a valid password(minimum 6 characters)")
-    }
+    }  
     else {
       setErrorMessage("");
       console.log(formData);
@@ -80,7 +79,7 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
             <input
               type="name"
               name="firstname"
-              className="border  py-3  px-[4em]  rounded-full outline-none my-4"
+              className="border  py-[1em]  px-[3em]  rounded-full outline-none my-4"
               placeholder="First Name"
               onChange={handleInputChange}
             />
@@ -89,7 +88,7 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
             <input
               type="name"
               name="lastname"
-              className="border  py-3  px-[4em]  rounded-full outline-none my-4"
+              className="border  py-[1em]  px-[3em]  rounded-full outline-none my-4"
               placeholder="Last Name"
               onChange={handleInputChange}
             />
@@ -98,7 +97,7 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
             <input
               type="phone"
               name="phonenumber"
-              className="border  py-3  px-[4em]  rounded-full outline-none my-4"
+              className="border  py-[1em] px-[3em]  rounded-full outline-none my-4"
               placeholder="phone Number"
               onChange={handleInputChange}
             />
@@ -107,7 +106,7 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
             <input
               type="email"
               name="email"
-              className="border  py-3  px-[4em]  rounded-full outline-none my-4"
+              className="border  py-[1em]  px-[3em]  rounded-full outline-none my-4"
               placeholder="email"
               onChange={handleInputChange}
             />
@@ -116,7 +115,7 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
           <div className="border cursor-pointer  pr-5 rounded-full flex items-center">
             <input
               type={showPassword ? "password" : "text"}
-              className=" bg-[transparent] py-3 px-[1em] flex-1 outline-none"
+              className=" bg-[transparent] py-[1em] px-[2em] flex-1 outline-none"
               name="password"
               placeholder=" Enter password"
               onChange={handleInputChange}
@@ -129,7 +128,7 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
             <input
               type="password"
               name="confirmpassword"
-              className="border  py-3  px-[1em]  rounded-full outline-none my-4"
+              className="border  py-[1em]  px-[3em]  rounded-full outline-none my-4"
               placeholder="Confirm Password"
               onChange={(e) =>
                 setConfirmPassword({
@@ -146,18 +145,18 @@ setErrorMessage("please set a valid password(minimum 6 characters)")
           Security and privacy news and updates
         </h2> */}
         <button
-          className="text-center bg-[#023047] text-[#fff] border  border-[] py-3 px-[8em] rounded-full"
+          className="text-center bg-[#023047] text-[#fff] border  border-[] py-[1em] px-[7em] rounded-full"
           onClick={handleSignUp}
         >
           Create an account
         </button>
         <h2 className="text-center">OR</h2>
-        <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-3 px-[8em] rounded-full">
+        <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-[1em] px-7em] rounded-full">
           continue with Google
         </button>
         <h2 className="my-4 ">
           already have an account?
-          <span className="text-[#023047] cursor-pointer">Log in</span>
+         <Link to="/Login"><span className="text-[#023047] cursor-pointer">Log in</span></Link>
         </h2>
       </div>
     </div>

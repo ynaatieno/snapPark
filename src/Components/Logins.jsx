@@ -1,9 +1,12 @@
 import { IoIosEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 import { useState } from "react";
-import { getAuth, signInWithEmailAndPassword,validatePassword } from "firebase/auth";
+import {signInWithEmailAndPassword,validatePassword } from "firebase/auth";
 import { auth, db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
+import { getAuth, signOut } from "firebase/auth";
+import {Link} from "react-router-dom"
+
 
 
 function Logins() {
@@ -39,6 +42,13 @@ email:"",
     const user = await addDoc(collection(db, "users"), formData);
 
     console.log(user);
+    
+    signOut(auth).then((userData) => {
+      const user=userData.user
+
+    }).catch((error) => {
+      console.log(error)
+    })
     }
   }
  
@@ -54,7 +64,7 @@ email:"",
           <input
             type="Email"
             name="email"
-            className="border  py-3  px-[4em]  rounded-full outline-none my-4"
+            className="border  py-[1em]  px-[2.5em]  rounded-full outline-none my-4"
             placeholder=" Enter Email Adress"
             onChange={handleInputChange}
           />
@@ -63,7 +73,7 @@ email:"",
             <input
               type={showPassword?"password":"text"}
               name="password"
-              className=" bg-[transparent] py-3 px-[1em] flex-1 outline-none"
+              className=" bg-[transparent] py-[1em] px-[1em] flex-1 outline-none"
               placeholder="Enter Password"
               onChange={handleInputChange}
             />
@@ -82,7 +92,7 @@ email:"",
         <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-[1em] px-[6em] rounded-full">
           Sign in with Google
         </button>
-        <h2 className="my-4 ">Don't have an account?<span className="text-[#023047] cursor-pointer">Sign up</span></h2>
+        <Link to="/Signup"><h2 className="my-4 ">Don't have an account?<span className="text-[#023047] cursor-pointer">Sign up</span></h2></Link>
         <h2 className="text-center my-4 cursor-pointer">Forgot password?</h2>
         <h2 className="text-center my-4 ">
           {" "}
