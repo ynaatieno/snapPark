@@ -1,4 +1,5 @@
 
+
 import Bookings from "../Components/Bookings";
 
 function Booking() {
@@ -9,5 +10,4 @@ function Booking() {
   );
 }
 export default Booking;
-
 
