@@ -1,4 +1,15 @@
+
 function Payment (){
+
+
+
+
+
+function Payment(){
+
+function Payment (){
+
+
     return(
         <>
         </>
