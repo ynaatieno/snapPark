@@ -22,18 +22,6 @@ function App() {
 
    
 
-    <>
-    <div>
-      <Router/>
-    </div>
-    </>
-
-    <div>
-      <Router/>
-    </div>
-
-  )
-
 }
 
 export default App;
