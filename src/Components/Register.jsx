@@ -48,22 +48,25 @@ function Register() {
     } else if (confirmPassword.passwordValue !== formData.password) {
       setErrorMessage("Passwords do not match");
      
-    }  
+    }  else if(formData.password.length<6){
+setErrorMessage("password should have at least 6 characters")
+    }
+
     else {
       setErrorMessage("");
       console.log(formData);
-      createUserWithEmailAndPassword(auth, formData.email, formData.password)
+      createUserWithEmailAndPassword(auth,formData.email,formData.password)
         .then((userData) => {
           const user = userData.user;
           // console.log(user)
         })
         .catch((error) => console.log(error));
 
-      const user = await addDoc(collection(db, "users"), formData);
+      const user = await addDoc(collection(db,"users"), formData);
 
       console.log(user);
       if (user) {
-        navigate("/login");
+        navigate("/Login");
       }
     }
   }

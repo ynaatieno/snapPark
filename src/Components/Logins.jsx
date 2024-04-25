@@ -4,7 +4,7 @@ import { useState } from "react";
 import {signInWithEmailAndPassword,validatePassword } from "firebase/auth";
 import { auth, db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
-import { getAuth, signOut } from "firebase/auth";
+
 import {Link} from "react-router-dom"
 
 
@@ -29,7 +29,10 @@ email:"",
       setErrorMessage("Kindly fill in the email");
     } else if (formData.password === "") {
       setErrorMessage("Kindly fill in password");
-    }else {
+    }  else if(formData.password.length<6){
+      setErrorMessage("password should have at least 6 characters")
+          }
+    else {
       setErrorMessage("");
       console.log(formData);
       signInWithEmailAndPassword(auth, formData.email, formData.password)
@@ -43,12 +46,7 @@ email:"",
 
     console.log(user);
     
-    signOut(auth).then((userData) => {
-      const user=userData.user
-
-    }).catch((error) => {
-      console.log(error)
-    })
+    
     }
   }
  
@@ -91,7 +89,7 @@ email:"",
 
         
         <Link to="/Signup"><h2 className="my-4 ">Don't have an account?<span className="text-[#023047] cursor-pointer">Sign up</span></h2></Link>
-        <h2 className="text-center my-4 cursor-pointer">Forgot password?</h2>
+        
         <h2 className="text-center my-4 ">
           {" "}
           <input type="checkbox" />
