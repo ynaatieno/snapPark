@@ -10,14 +10,14 @@ function About(){
             </div>
             </div>
             <div className="flex gap-10 justify-center items-center">
-                <img src="src/assets/booking.jpg" className="rounded-full"/>
+                <img src="src/assets/book.jpg" className="rounded-full"/>
                 
                 <div><h2><span className="text-[#ffb703] text-3xl font-bold"> Book</span></h2>
                 <p  className="text-2xl text-[#023047]">Book a space in just a few easy clicks.<br></br>Pay securely and receive parking space instantly</p>
             </div>
             </div>
             <div className="flex gap-10 justify-center items-center">
-                <img src="src/assets/carparking.jpg" className="rounded-3xl"/>
+                <img src="src/assets/park.jpg" className="rounded-3xl"/>
                 
                 <div><h2><span className="text-[#ffb703] text-3xl font-bold"> Park</span></h2>
                 <p  className="text-2xl text-[#023047]"> Enter easily with your mobile parking pass.<br></br>Follow the instructions included in your pass,park and go</p>

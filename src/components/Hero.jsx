@@ -26,7 +26,7 @@ function Hero() {
 
   return (
     <>
-      <div className="bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('src/assets/home.jpg')] h-[90vh] bg-cover w-[100vw]">
+      <div className="bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('src/assets/bg.jpg')] h-[90vh] bg-cover w-[100vw]">
         <div className="flex flex-col justify-center items-center gap-[5em] h-full">
           <div className="">
             <h1 className="text-6xl font-bold text-white">
