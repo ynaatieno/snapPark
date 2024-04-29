@@ -1,33 +1,16 @@
 
 
-
-import Payment from "../Components/Payment";
-
-function Payments() {
-  return (
-    <>
-      <Payment />
-    </>
-  );
-
-import Payment from "../components/Payment"
-
+import Payment from "../Components/Payment"
 
 function Payments(){
     return(
-        <>
-        <Payment/>
-        </>
-
-
-function Payments (){
-    return(
+        
         <div>
-            <Payment/>
+        <Payment/>
         </div>
-
+      
     )
-
 }
+
 export default Payments
 

@@ -12,7 +12,7 @@ function Payment(){
    </div>
    
    <div>
-        <input type="card" className="border  py-3  px-[4em]  rounded-full outline-none my-4"  placeholder="Card Number"/>
+        <input type="card" className="border  py-3  px-[4em]  rounded-full outline-none my-4"  placeholder="Choose way of payment"/>
 
         <div>
           <input type="password"  className="border  py-3  px-[4em]  rounded-full outline-none my-4" placeholder=" Enter Password" />
@@ -21,8 +21,6 @@ function Payment(){
           </div>
           
         </div>
-        
-          <button className="border  border-[] py-3 px-[8em] rounded-full bg-[#023047] text-[#fff]">enter ammount</button>
         
           <button className="text-center bg-[#023047] text-[#fff] border  border-[] py-3 px-[8em] rounded-full">pay</button>
         
