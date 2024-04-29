@@ -1,5 +1,6 @@
 
 
+
 import Payment from "../Components/Payment"
 
 function Payments(){
