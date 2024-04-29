@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+
 import Search from "../components/Search";
 function AddSpace() {
+  const[addSpace,setAddSpace]=usestate({
+    name:"",
+    price:""
+  
+  }
+
+  )
+
   return (
     <div className="container mx-auto">
       <h2 className="text-center text-3xl text-[#023047] font-bold mt-20 mb-5">
@@ -23,7 +31,7 @@ function AddSpace() {
               className="border shadow-lg border-gray-400 rounded-lg
  px-2 py-7 w-full"
             />
-            {/* <h1>hey</h1> */}
+          
           </div>
 
           <div className="flex w-[50%]">
@@ -37,12 +45,11 @@ function AddSpace() {
  px-2 py-7 mb-5 w-full"
             />
           </div>
-          <Link to="/booking">
-            {" "}
+          
             <button className="border  border-gray-400 bg-[#ffb703] text-[#023047] rounded-full px-[4em] py-4 mb-6 font-bold text-2xl">
               Add
             </button>
-          </Link>
+          
         </div>
       </div>
     </div>

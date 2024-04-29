@@ -1,16 +1,11 @@
 
-function Register (){
-    return(
 
 
 
 
 
 
-function Register(){
-    return(
-    <>
-    </>
+
         
 
 function Register (){
