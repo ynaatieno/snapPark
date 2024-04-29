@@ -36,12 +36,12 @@ function AddSpace() {
  px-2 py-7 mb-5 w-full"
             />
           </div>
-          {/* <Link to="/booking">
+          <Link to="/booking">
             {" "}
             <button className="border  border-gray-400 bg-[#ffb703] text-[#023047] rounded-full px-[4em] py-4 mb-6 font-bold text-2xl">
               Add
             </button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>

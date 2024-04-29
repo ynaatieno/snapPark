@@ -1,8 +1,8 @@
 import { useScript } from "@uidotdev/usehooks";
 import { useRef, useEffect, useMemo } from "react";
 import Search from "./Search";
-import Map from "./Map";
-
+// import Map from "./Map";
+import { GoogleMap } from "@react-google-maps/api";
 function Hero() {
   const autoCompleteRef = useRef();
   const inputRef = useRef();
@@ -26,7 +26,7 @@ function Hero() {
 
   return (
     <>
-      <div className="bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('src/assets/bg.jpg')] h-[90vh] bg-cover w-[100vw]">
+      <div className="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('src/assets/hero.avif')] h-[90vh] bg-cover w-[100vw] bg-red-700">
         <div className="flex flex-col justify-center items-center gap-[5em] h-full">
           <div className="">
             <h1 className="text-6xl font-bold text-white">
@@ -36,10 +36,10 @@ function Hero() {
           <div className="flex gap-4">
             <Search customStyles="bg-[#023047]"/>
 
-
+<div>
             <button className="border bg-[#ffb703] rounded-lg py-8 px-6 w-[200px]">
               Find Parking
-            </button> 
+            </button> </div>
           </div>
         </div>
         <div></div>
