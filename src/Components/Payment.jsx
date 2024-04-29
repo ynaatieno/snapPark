@@ -14,11 +14,11 @@ function Payment(){
    <div>
         <input type="card" className="border  py-3  px-[4em]  rounded-full outline-none my-4"  placeholder="Choose way of payment"/>
 
-        <div>
-          <input type="password"  className="border  py-3  px-[4em]  rounded-full outline-none my-4" placeholder=" Enter Password" />
+        
+          
 
           
-          </div>
+          
           
         </div>
         
