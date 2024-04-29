@@ -1,3 +1,4 @@
+
 import { useScript } from "@uidotdev/usehooks";
 import { useRef, useEffect, useMemo } from "react";
 import Search from "./Search";
@@ -49,3 +50,22 @@ function Hero() {
   );
 }
 export default Hero;
+
+
+function Hero (){
+
+
+
+
+function Hero(){
+
+function Hero (){
+
+
+    return(
+        <>
+        </>
+    )
+}
+export default Hero
+

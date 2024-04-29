@@ -1,11 +1,33 @@
 import Router from "./components/Router"
 
 
-function App() {
+import Router from "./Components/Router";
 
+
+
+
+
+function App() {
   return (
+
     <Router/>
   )
+
+
+
+
+    
+      <div>
+        <Router />
+      </div>
+    
+  
+  );
+  
+
+   
+
+
 }
 
-export default App
+export default App;
