@@ -23,6 +23,7 @@ function AddSpace() {
               className="border shadow-lg border-gray-400 rounded-lg
  px-2 py-7 w-full"
             />
+            {/* <h1>hey</h1> */}
           </div>
 
           <div className="flex w-[50%]">
