@@ -4,6 +4,7 @@ import { useState } from "react";
 import {signInWithEmailAndPassword,validatePassword } from "firebase/auth";
 import { auth, db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 import {Link} from "react-router-dom"
 
@@ -16,6 +17,7 @@ password:"",
 email:"",
   })
   const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
 
 
   function handleShowPassword() {
@@ -47,6 +49,9 @@ email:"",
     console.log(user);
     
     
+    }
+    if (user) {
+      navigate("/booking");
     }
   }
  

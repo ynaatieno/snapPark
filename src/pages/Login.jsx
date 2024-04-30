@@ -1,7 +1,7 @@
 
 
 
-import Logins from "../Components/Logins";
+import Logins from "../components/Logins";
 
 function Login() {
   return (
