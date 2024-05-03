@@ -1,7 +1,7 @@
 
 
 
-import Bookings from "../Components/Bookings";
+import Bookings from "../components/Bookings";
 
 function Booking() {
   return (

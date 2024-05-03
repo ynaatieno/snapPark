@@ -4,6 +4,8 @@ import { useState } from "react";
 import {signInWithEmailAndPassword,validatePassword } from "firebase/auth";
 import { auth, db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
+import { getAuth, signOut } from "firebase/auth";
 
 import {Link} from "react-router-dom"
 
@@ -16,6 +18,8 @@ password:"",
 email:"",
   })
   const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
+  const auth = getAuth();
 
 
   function handleShowPassword() {
@@ -45,9 +49,16 @@ email:"",
     const user = await addDoc(collection(db, "users"), formData);
 
     console.log(user);
-    
+    if (user) {
+      navigate("/");
+    }
     
     }
+    signOut(auth).then(() => {
+
+    }).catch((error) => {
+
+    });
   }
  
 
@@ -95,6 +106,7 @@ email:"",
           <input type="checkbox" />
           Remember me
         </h2>
+        <h2 onClick={handleLogin}>signOut</h2>
       </div>
     </div>
   );

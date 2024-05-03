@@ -1,7 +1,7 @@
 
 
 
-import Payment from "../Components/Payment"
+import Payment from "../components/Payment"
 
 function Payments(){
     return(
